@@ -1,106 +1,76 @@
-Used Car Price Prediction (CRISP‑DM Project)
+## Used Car Price Prediction (CRISP‑DM Project)
+
 This project applies the CRISP‑DM framework to analyze a large used‑car dataset and build a model that helps used‑car dealerships make smarter inventory and pricing decisions. The goal is to understand what drives used‑car prices and develop a reliable prediction model.
 
-Overview
+**Overview**
+
 We worked with ~400K used‑car listings containing details such as age, mileage, condition, manufacturer, model, body type, fuel type, and price. After cleaning and engineering features, we tested multiple regression models and selected the best performer.
 
-CRISP‑DM Summary
-Business Understanding
+###CRISP‑DM Summary
+
+**Business Understanding**
+
 Dealerships need consistent, data‑driven pricing and better insight into which vehicles hold value.
 Objective: identify key price drivers and build a model that predicts used‑car prices accurately.
 
-Data Preparation
-Cleaned manufacturer/model inconsistencies
+**Data Preparation**
 
-Removed outliers and corrupted records
+- Cleaned manufacturer/model inconsistencies
+- Removed outliers and corrupted records
+- Engineered features (age, miles per year, numeric condition, combined body type)
+- Scaled numeric features and one‑hot encoded categorical variables
 
-Engineered features (age, miles per year, numeric condition, combined body type)
-
-Scaled numeric features and one‑hot encoded categorical variables
-
-Modeling
+**Modeling**
 Models tested:
 
-Linear Regression
+- Linear Regression
+- Ridge Regression
+- Lasso Regression
+- Polynomial degrees (1, 2, 3)
 
-Ridge Regression
+**Final Model**: Ridge Regression with degree‑2 polynomial features
+**Performance**: R² ≈ 0.76–0.77
 
-Lasso Regression
+### Evaluation
+- Ridge provided the best balance of accuracy and stability
+- Polynomial degree‑2 improved performance without excessive complexity
+- Residuals showed no major unexplained patterns
 
-Polynomial degrees (1, 2, 3)
-
-Final Model: Ridge Regression with degree‑2 polynomial features
-Performance: R² ≈ 0.76–0.77
-
-Evaluation
-Ridge provided the best balance of accuracy and stability
-
-Polynomial degree‑2 improved performance without excessive complexity
-
-Residuals showed no major unexplained patterns
-
-Deployment
+### Deployment
 The final model is packaged as a scikit‑learn pipeline and can be used for:
+- Pricing inventory
+- Trade‑in valuation
+- Market comparison
+- Inventory appraisal
 
-Pricing inventory
+### Key Insights for Dealerships
+**Top Price Drivers**
+- **Age** — Newer vehicles retain higher value
+- **Mileage** — Lower mileage strongly increases price
+- **Miles per Year** — Light usage boosts value
+- **Condition** — Higher condition ratings significantly raise price
+- **Body Type** — SUVs and trucks outperform sedans and coupes
+- **Fuel Type** — Hybrids/EVs show higher median prices
+- **Manufacturer & Model** — Mainstream brands and popular models retain strong value
 
-Trade‑in valuation
+### Recommendations
+**Buy:**
+- Vehicles ≤8 years old
+- <60K miles
+- SUVs and trucks
+- Popular models (F‑150, Camry, Civic, Wrangler)
+- Hybrids/EVs where demand is strong
 
-Market comparison
+**Avoid:**
+- High‑mileage sedans
+- Fair/salvage condition vehicles
+- Rare or niche models with low demand
 
-Inventory appraisal
+**Recondition:**
+- Vehicles close to “excellent” condition
+- Cosmetic improvements that raise condition tier
 
-Key Insights for Dealerships
-Top Price Drivers
-Age — Newer vehicles retain higher value
-
-Mileage — Lower mileage strongly increases price
-
-Miles per Year — Light usage boosts value
-
-Condition — Higher condition ratings significantly raise price
-
-Body Type — SUVs and trucks outperform sedans and coupes
-
-Fuel Type — Hybrids/EVs show higher median prices
-
-Manufacturer & Model — Mainstream brands and popular models retain strong value
-
-Recommendations
-Buy:
-
-Vehicles ≤8 years old
-
-<60K miles
-
-SUVs and trucks
-
-Popular models (F‑150, Camry, Civic, Wrangler)
-
-Hybrids/EVs where demand is strong
-
-Avoid:
-
-High‑mileage sedans
-
-Fair/salvage condition vehicles
-
-Rare or niche models with low demand
-
-Recondition:
-
-Vehicles close to “excellent” condition
-
-Cosmetic improvements that raise condition tier
-
-Tech Stack
+### Tech Stack
 Python, Pandas, NumPy, Scikit‑learn, Matplotlib, Seaborn, Jupyter Notebook
 
-Repository Structure
-Code
-├── data/           
-├── notebooks/      
-├── models/         
-├── visuals/        
-├── README.md       
-└── requirements.txt
+
