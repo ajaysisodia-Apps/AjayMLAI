@@ -6,14 +6,14 @@ This project applies the CRISP‑DM framework to analyze a large used‑car data
 
 We worked with ~400K used‑car listings containing details such as age, mileage, condition, manufacturer, model, body type, fuel type, and price. After cleaning and engineering features, we tested multiple regression models and selected the best performer.
 
-###CRISP‑DM Summary
+### CRISP‑DM Summary
 
 **Business Understanding**
 
-Dealerships need consistent, data‑driven pricing and better insight into which vehicles hold value.
+Dealerships need consistent, data‑driven pricing and better insight into which vehicles hold value.  
 Objective: identify key price drivers and build a model that predicts used‑car prices accurately.
 
-**Data Preparation**
+**Data Understanding and Preparation**
 
 - Cleaned manufacturer/model inconsistencies
 - Removed outliers and corrupted records
@@ -22,7 +22,6 @@ Objective: identify key price drivers and build a model that predicts used‑car
 
 **Modeling**
 Models tested:
-
 - Linear Regression
 - Ridge Regression
 - Lasso Regression
@@ -45,21 +44,22 @@ The final model is packaged as a scikit‑learn pipeline and can be used for:
 
 ### Key Insights for Dealerships
 **Top Price Drivers**
+- **Manufacturer & Model** like Eurovan, Lexus, Land Cruiser, along with many vans, campers, and wagons retain strong value
 - **Age** — Newer vehicles retain higher value
 - **Mileage** — Lower mileage strongly increases price
 - **Miles per Year** — Light usage boosts value
 - **Condition** — Higher condition ratings significantly raise price
 - **Body Type** — SUVs and trucks outperform sedans and coupes
 - **Fuel Type** — Hybrids/EVs show higher median prices
-- **Manufacturer & Model** — Mainstream brands and popular models retain strong value
+
 
 ### Recommendations
 **Buy:**
-- Vehicles ≤8 years old
+- Late‑model vehicles
 - <60K miles
-- SUVs and trucks
-- Popular models (F‑150, Camry, Civic, Wrangler)
-- Hybrids/EVs where demand is strong
+- SUVs, Vans, trucks and wagons
+- Top performer models along with mainstream vehicles
+- Hybrids/EVs only where demand is strong
 
 **Avoid:**
 - High‑mileage sedans
