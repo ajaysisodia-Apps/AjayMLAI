@@ -6,7 +6,7 @@ This project applies machine learning classification techniques to predict wheth
 
 The business goal is to improve the efficiency of marketing campaigns by targeting customers with a higher likelihood of subscribing, helping reduce campaign costs and improve conversion rates.
 
-Notebook : bank-term-deposit-prediction/Comparing Classifiers.ipynb
+Notebook : [bank-term-deposit-prediction/Comparing Classifiers.ipynb](https://github.com/ajaysisodia-Apps/AjayMLAI/blob/main/bank-term-deposit-prediction/Comparing%20Classifiers.ipynb)
 
 ## Business Problem
 
