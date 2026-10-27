@@ -6,6 +6,8 @@ This project applies machine learning classification techniques to predict wheth
 
 The business goal is to improve the efficiency of marketing campaigns by targeting customers with a higher likelihood of subscribing, helping reduce campaign costs and improve conversion rates.
 
+Notebook : bank-term-deposit-prediction/Comparing Classifiers.ipynb
+
 ## Business Problem
 
 The business objective is to improve the effectiveness of the bank's direct marketing campaigns by identifying customers who are most likely to subscribe to a term deposit. Using customer demographic information, previous campaign interactions, and economic indicators, the bank aims to predict the target variable y, which indicates whether a client subscribes to a long term deposit (yes) or not (no). By identifying potential subscribers before making contact, the bank can allocate marketing resources more efficiently, reduce campaign costs, and improve overall campaign success rates.
