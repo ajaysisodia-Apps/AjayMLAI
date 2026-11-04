@@ -3,6 +3,8 @@
 
 Traditional portfolio allocation approaches often rely on historical relationships between asset classes and may not adapt effectively to changing market conditions. This project investigates whether machine learning techniques can be used to identify market regimes and support dynamic asset allocation decisions.
 
+Jupyter Notebook : https://github.com/ajaysisodia-Apps/AjayMLAI/blob/main/EDACapstoneProject/EDA-CapstoneProject.ipynb
+
 ### Research Question
 
 Can market regime detection and machine learning techniques improve dynamic asset allocation compared to traditional static portfolio allocation approaches?
