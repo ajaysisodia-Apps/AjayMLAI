@@ -31,7 +31,7 @@ This project explores whether machine learning-driven market regime detection ca
 
 | File | Description |
 |--------|-------------|
-| `EDA-CapstoneProject.ipynb` | Exploratory Data Analysis (EDA), feature engineering, and baseline modeling |
+| `EDACapstoneProject.ipynb` | Exploratory Data Analysis (EDA), feature engineering, and baseline modeling |
 | `ML_Driven_Dynamic_Asset_Allocation.ipynb` | Market regime detection, portfolio construction, backtesting, and evaluation |
 | `README.md` | Project documentation and summary |
 
