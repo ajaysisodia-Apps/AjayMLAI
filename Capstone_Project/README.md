@@ -29,12 +29,11 @@ This project explores whether machine learning-driven market regime detection ca
 
 ## Project Files
 
-| File | Description |
-|--------|-------------|
-| `EDACapstoneProject.ipynb` | Exploratory Data Analysis (EDA), feature engineering, and baseline modeling |
-| `ML_Driven_Dynamic_Asset_Allocation.ipynb` | Market regime detection, portfolio construction, backtesting, and evaluation |
-| `README.md` | Project documentation and summary |
-
+| File | Description | Link |
+|------|-------------|------|
+| `EDACapstoneProject.ipynb` | Exploratory Data Analysis (EDA), feature engineering, and baseline modeling | [Open Notebook](https://github.com/ajaysisodia-Apps/AjayMLAI/blob/main/Capstone_Project/EDACapstoneProject.ipynb) |
+| `ML_Driven_Dynamic_Asset_Allocation.ipynb` | Market regime detection, portfolio construction, backtesting, and evaluation | [Open Notebook](https://github.com/ajaysisodia-Apps/AjayMLAI/blob/main/Capstone_Project/ML_Driven_Dynamic_Asset_Allocation.ipynb) |
+| `README.md` | Project documentation and summary | [Open README](https://github.com/ajaysisodia-Apps/AjayMLAI/blob/main/Capstone_Project/README.md) |
 ---
 
 ## Data and Methodology
